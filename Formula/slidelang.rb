@@ -5,21 +5,21 @@
 class Slidelang < Formula
   desc "SlideLang compiler and AST toolkit"
   homepage "https://go.ziradocs.com"
-  version "2.58.0"
+  version "2.59.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.58.0/slidelang_2.58.0_darwin_amd64.tar.gz"
-      sha256 "baa8242b4c6e0b3e65decf2fced05779f1513054f4238071569285e577abe69d"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/slidelang_2.59.0_darwin_amd64.tar.gz"
+      sha256 "8298a341cdda58714fbf4ee9c18cf3f319343597e7467c1d70879640a3530a92"
 
       define_method(:install) do
         bin.install "slidelang"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.58.0/slidelang_2.58.0_darwin_arm64.tar.gz"
-      sha256 "7e09f644145836de9e67acc9656fd753be9798ff64f55ec2fe37e9c24af17af4"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/slidelang_2.59.0_darwin_arm64.tar.gz"
+      sha256 "40c1c3d644d0bf763fd9e1e1ea37ae5c267052758cb220491d92e1dbe8239e5b"
 
       define_method(:install) do
         bin.install "slidelang"
@@ -29,15 +29,15 @@ class Slidelang < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.58.0/slidelang_2.58.0_linux_amd64.tar.gz"
-      sha256 "1de00f47e06de10594b9ffe1edaf5518b2a8792490ac072e2003c03f342e120f"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/slidelang_2.59.0_linux_amd64.tar.gz"
+      sha256 "b05ef0118c81e7de792e3a207bffc2192eb2791efd42412a8f8ae87fe090c6be"
       define_method(:install) do
         bin.install "slidelang"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.58.0/slidelang_2.58.0_linux_arm64.tar.gz"
-      sha256 "461d970a6ef32a1ea0fe9f7aad89a6764cfc1895317e2fa944180fa797fb54ff"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/slidelang_2.59.0_linux_arm64.tar.gz"
+      sha256 "b3d9bb3a9de7f007fe7f6aa1820c05f647251e77bfb85755bcce601bce78e9ee"
       define_method(:install) do
         bin.install "slidelang"
       end
