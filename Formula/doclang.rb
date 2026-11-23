@@ -5,21 +5,21 @@
 class Doclang < Formula
   desc "DocLang compiler and AST toolkit"
   homepage "https://go.ziradocs.com"
-  version "2.59.0"
+  version "2.59.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/doclang_2.59.0_darwin_amd64.tar.gz"
-      sha256 "b62918243787d457cf9886270ce81c731211d920add755f43f1a44c462a609fa"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.1/doclang_2.59.1_darwin_amd64.tar.gz"
+      sha256 "f4a99a55c0ab9b898138707a076e1f5b5da389b40a50b86bb2e6b71f5e557a0d"
 
       define_method(:install) do
         bin.install "doclang"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/doclang_2.59.0_darwin_arm64.tar.gz"
-      sha256 "5352fb63cb873f21af3431663aad8ecf69c02811cdb953cc04d4c7520cd2c76a"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.1/doclang_2.59.1_darwin_arm64.tar.gz"
+      sha256 "7bad62e7687ad9ee161ee453205d8efc65f41be0b79e31df286503f77664b1ba"
 
       define_method(:install) do
         bin.install "doclang"
@@ -29,15 +29,15 @@ class Doclang < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/doclang_2.59.0_linux_amd64.tar.gz"
-      sha256 "ddffb8d95afd30b3242ff2a4462c4ddf1bd30831d8d6f9271cfbfc3af990d584"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.1/doclang_2.59.1_linux_amd64.tar.gz"
+      sha256 "d8bc834642b6fe8144c1b1f5eedfc4e972c460156883d0b4ed18dc98d20bcbdd"
       define_method(:install) do
         bin.install "doclang"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.0/doclang_2.59.0_linux_arm64.tar.gz"
-      sha256 "3a4d042dcac4e3f7ec5504f533b0c54dfb5ccb0dbf4f0f3fe65bd361bf8b57d6"
+      url "https://github.com/ziradocs/toolchain/releases/download/v2.59.1/doclang_2.59.1_linux_arm64.tar.gz"
+      sha256 "5cf4a13993b419767f6cbd92b73fb006aaf13bb109340b192c239652dffc1a5b"
       define_method(:install) do
         bin.install "doclang"
       end
